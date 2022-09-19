@@ -1,3 +1,10 @@
+#web page crawler: this code starts with an initial link from the University of Chicago course catalogue 
+#and creates course and relative key word pairings from the course's title and description. Code continues 
+#until completing every course listed by opening the relative links found on the initial webpage.
+
+#utilized beautifulsoup
+
+
 import util
 import bs4
 
