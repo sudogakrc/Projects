@@ -1,20 +1,13 @@
-# DATA 120: Linking restaurant records in Zagat and Fodor's data sets
-#
-# Su Karaca
-
-
+# Linking restaurant records in Zagat and Fodor's data sets
 import numpy as np
 import pandas as pd
 import util
 import jellyfish
 import itertools
 
-
 #all possible category pairs
 conditions = ["low", "medium", "high"]
 possible_27 = [b for b in itertools.product(conditions, repeat=3)]
-
-
 
 #defining a function that creates a list of category tuples given a dataframe with paired rows
 def create_category_tuples(given_df):
@@ -30,8 +23,6 @@ def create_category_tuples(given_df):
         list_name.append(any_tuple)
     return list_name
     
-    
-
 #creates a dictionary of keys: category tuples, values: probabilities
 def prob_of_tuples(list_given):
     count_tup = 0
@@ -43,10 +34,7 @@ def prob_of_tuples(list_given):
         
     return all_probs
 
-
 #THE ACTUAL FUNCTION
-
-
 def find_matches(mu, lambda_):
     
     # WRITE YOUR CODE HERE
@@ -60,7 +48,6 @@ def find_matches(mu, lambda_):
 
     zagat = pd.read_csv('zagat.csv', header=None)
     zagat.rename(columns={0: 'Indexes_Z', 1: 'Rest_Zagat', 2: 'City_Z', 3: 'Address_Z'}, inplace=True)
-
 
     #creating the matches dataframe from the known_links columns
     matches_zagat =  pd.merge(known_links,zagat,left_on='Zagat_Index',right_on='Indexes_Z')
@@ -84,13 +71,9 @@ def find_matches(mu, lambda_):
     list_of_match_tuples = create_category_tuples(matches)
     list_of_unmatch_tuples = create_category_tuples(unmatches)
     
-    
-    
     #probability dictionaryies of matches and unmatches tuples
     prob_match = prob_of_tuples(list_of_match_tuples)
     prob_unmatch = prob_of_tuples(list_of_unmatch_tuples)
-
-
 
     #a dictionary of combined probabilities of uw and mw
     probabilities = {}
@@ -99,15 +82,12 @@ def find_matches(mu, lambda_):
         uw = prob_unmatch[tupl]
         probabilities[tupl] = (uw, mw)
         
-        
-
     #creates ordered probability lists of tuples
     possible_tuples = []
     for key in possible_27:
         if probabilities[key] == (0.0, 0.0):
             possible_tuples.append(key)
             
-
     sorted_order = []
     sira = []
     for key in possible_27:
@@ -119,7 +99,6 @@ def find_matches(mu, lambda_):
     for each_s in sira:
         sorted_order.append(each_s[0])
         
-
     ordered = []
     for key in possible_27:
         if key not in possible_tuples:
@@ -132,7 +111,6 @@ def find_matches(mu, lambda_):
     for each_k in ordered:
         sorted_order.append(each_k[0])
         
-        
     ranked = []
     for key in possible_27:
         if key not in possible_tuples:
@@ -143,8 +121,6 @@ def find_matches(mu, lambda_):
     for each_r in ranked:
         sorted_order.append(each_r[0])
         
-        
-        
     #creates an ordered list of the tuples
     ordered_list = []
     for tupls in sorted_order:
@@ -152,12 +128,9 @@ def find_matches(mu, lambda_):
         each_tuple_in.append(tupls)
         each_tuple_in.append(probabilities[tupls])
         ordered_list.append(each_tuple_in)
-
     ordered_list.reverse()
     reversed_list = ordered_list[:]
     ordered_list.reverse()
-
-    
     
     #creates match tuple list
     match_tuples = []
@@ -187,8 +160,6 @@ def find_matches(mu, lambda_):
             if eacht[0] not in unmatch_tuples:
                 possible_tuples.append(eacht[0])
                 
-                
-    
     #creates a dataframe of every possible pair of Zagat and Fodors
     every_possible_pair = pd.DataFrame(columns = ["Rest_Zagat", "Rest_Fodors",
                                                   "City_Z", "City_F",
@@ -206,15 +177,12 @@ def find_matches(mu, lambda_):
     #creates category tuples for every row in the dataframe
     every_pairs_tuple = create_category_tuples(every_possible_pair)
     
-    
     #creates a dictionary of keys: index of pair tuples from the pair dataframe and values: pair tuples
     tuples_dict = {}
 
     for r in range(0, len(every_possible_pair)):
         tuples_dict[r] = every_pairs_tuple[r]
         
-    
-    
     #creates the three dataframes for match pairs, unmatch pairs, and possible pairs using the dictionary created
     match_pairs = pd.DataFrame(columns = ["Rest_Zagat", "City_Z", "Address_Z",
                                         "Rest_Fodors", "City_F", "Address_F"])
@@ -251,7 +219,6 @@ def find_matches(mu, lambda_):
             
     return (match_pairs, unmatch_pairs, possible_pairs)
 
-
 if __name__ == '__main__':
     matches, possibles, unmatches = \
         find_matches(0.005, 0.005)
@@ -260,7 +227,4 @@ if __name__ == '__main__':
           "unmatches.".format(matches.shape[0],
                                                possibles.shape[0],
                                                unmatches.shape[0]))
-                                               
-                                               
-                                               
-#end of code check line
+
