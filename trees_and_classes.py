@@ -9,7 +9,6 @@ def int_power(b, e):
     else:
         return int_power(b * b, e // 2) * int_power(b, e % 2)
 
-
 # Question 2
 
 def make_change(amount, denominations):
@@ -24,7 +23,6 @@ def make_change(amount, denominations):
                 n_d.insert(0, d)
             results += new_in_d
     return results
-
 
 # For the rest:
 
@@ -41,7 +39,6 @@ tree1 = Tree("US", 4.6,
             [Tree("Pittsburgh", 0.3, []),
              Tree("Philadelphia", 1.6, [])])])
              
-
 # Question 3
 
 def get_population(T, node_keys):
@@ -55,7 +52,6 @@ def get_population(T, node_keys):
                     return pop_t
     return None
     
-
 # Question 4
 
 def path_to(T, key):
@@ -67,7 +63,6 @@ def path_to(T, key):
             return [T.key] + rest
     return []
     
-
 # Question 5
             
 def to_table(T):
