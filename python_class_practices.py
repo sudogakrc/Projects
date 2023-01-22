@@ -1,4 +1,4 @@
-#SU KARACA PA2
+#creating the UChicago course selection algorithm using the restrictions of the College
 
 #COURSES CLASS
 weekdays = "MTWRF"
@@ -87,8 +87,7 @@ class Course:
                 return True
             else:
                 return False
-    
-    
+
 #STUDENTS CLASS
 
 class Student:
@@ -160,18 +159,3 @@ class Student:
                             self.enrollment.append(courses_obj)
                     else:
                         raise ValueError("The prereqs for the course are not met.")
-                
-                
-    
-            
-        
-        
-        
-        
-                
-            
-        
-            
-        
-            
-        
