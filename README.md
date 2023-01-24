@@ -1,7 +1,7 @@
 <h1 align="center">Hi! 👋 </h1>
 
 <p align="left">
-Either by following the link on <a href="https://github.com/sudogakrc/sudogakrc" target="_blank" rel="noreferrer"> my personal introduction page </a> or through other means, you have reached my public repository, in which I store my college course / personal practices on certain data science topics. If you'd like to learn more about what I used each script for, you can continue reading this README which has a short description for each script in this repository.
+Either by following the link on <a href="https://github.com/sudogakrc/sudogakrc" target="_blank" rel="noreferrer"> my personal introduction page </a> or through other means, you have reached my public repository in which I store my college course / personal practices on certain data science topics. If you'd like to learn more about what I used each script for, you can continue reading this README which has a short description, and a link, for each script in this repository.
 </p>
 
 ## [Data Reports 📜](https://github.com/sudogakrc/Projects/tree/main/data_reports)
