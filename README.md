@@ -1,3 +1,9 @@
+<h1 align="center">Hi! <a href="https://static.wixstatic.com/media/9949f1_4af56ca1589e4f69baeff6f3a669d08d~mv2.gif"><img align="right" alt="runningfire" width="300" height="150" src="https://static.wixstatic.com/media/9949f1_4af56ca1589e4f69baeff6f3a669d08d~mv2.gif"></a></h1>
+
+<p align="left">
+Either by following the link on <a href="https://github.com/sudogakrc/sudogakrc" target="_blank" rel="noreferrer"> my personal introduction page </a> or through other means, you have reached my public repository, in which I store my college course / personal practices on certain data science topics. If you'd like to learn more about what I used each script for, you can continue reading this README which has a short description for each script in this repository.
+</p>
+
 ## Data Reports Folder
 - ### AnalyzingHateCrimeData.pdf
   In this project, we, as a group, investigated the hate crime data across multiple official data sources.
