@@ -24,7 +24,7 @@ Either by following the link on <a href="https://github.com/sudogakrc/sudogakrc"
   Practicing using more complex regression models and choosing the best fit model by looking at regression metrics
 # [Practices 👩‍💻](https://github.com/sudogakrc/Projects/tree/main/practices)
   Individual or class projects conducted on Python, R, HTML, and SQL
-- ## [SQL_practices.py](https://github.com/sudogakrc/Projects/tree/main/practices/SQL_practices.py):
+- ## [SQL_practices.py](https://github.com/sudogakrc/Projects/tree/main/practices/SQL_practices.ipynb):
   Basic SQL practice using a simple dataset
 - ## [basic_python_practices.py](https://github.com/sudogakrc/Projects/tree/main/practices):
   Practice with dictionaries using basic built-in Python commands
