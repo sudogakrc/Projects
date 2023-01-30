@@ -24,6 +24,8 @@ Either by following the link on <a href="https://github.com/sudogakrc/sudogakrc"
   Practicing using more complex regression models and choosing the best fit model by looking at regression metrics
 # [Practices 👩‍💻](https://github.com/sudogakrc/Projects/tree/main/practices)
   Individual or class projects conducted on Python, R, HTML, and SQL
+- ## [Exploratory_Data_Analysis_HousePrices.ipynb](https://github.com/sudogakrc/Projects/tree/main/practices/Exploratory_Data_Analysis_HousePrices.ipynb):
+  This notebook demonstrates the basic technologies of doing data analysis for different data types, including: Data overview (understanding column data types, values, and distributions), Data cleaning (remove missing values, outlier detection, Data transformation (normalization, tokenization, lemmatization), Feature engineering (encoding categorical data, text feature representation), Understanding the interactions between columns (colinearty examination)
 - ## [SQL_practices.py](https://github.com/sudogakrc/Projects/tree/main/practices/SQL_practices.ipynb):
   Basic SQL practice using a simple dataset
 - ## [basic_python_practices.py](https://github.com/sudogakrc/Projects/tree/main/practices):
