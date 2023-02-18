@@ -5,6 +5,8 @@ Either by following the link on <a href="https://github.com/sudogakrc/sudogakrc"
 </p>
 
 ## [Data Reports 📜](https://github.com/sudogakrc/Projects/tree/main/data_reports)
+- ### [spotify_genre_classification.pdf](https://github.com/sudogakrc/Projects/tree/main/data_reports/Spotify_genre_classification)
+  In this project, I used decision tree and random forest classifiers to classify Spotify song genres.
 - ### [AnalyzingHateCrimeData.pdf](https://github.com/sudogakrc/Projects/blob/main/data_reports/AnalyzingHateCrimeData.pdf)
   In this project, we, as a group, investigated the hate crime data across multiple official data sources.
 - ### [FoodSecurityData.pdf](https://github.com/sudogakrc/Projects/blob/main/data_reports/FoodSecurityData.pdf)
