@@ -4,7 +4,7 @@
 Either by following the link on <a href="https://github.com/sudogakrc/sudogakrc" target="_blank" rel="noreferrer"> my personal introduction page </a> or through other means, you have reached my public repository in which I store my college course / personal practices on certain data science topics. If you'd like to learn more about what I used each script for, you can continue reading this README which has a short description, and a link, for each script in this repository.
 </p>
 
-## [Data Reports 📜](https://github.com/sudogakrc/Projects/tree/main/data_reports)
+## [Data Reports 👩‍💻](https://github.com/sudogakrc/Projects/tree/main/data_reports)
 - ### [spotify_genre_classification (ppt, video, and code)](https://github.com/sudogakrc/Projects/tree/main/data_reports/Spotify_genre_classification)
   In this project, I used decision tree and random forest classifiers to classify Spotify song genres.
 - ### [AnalyzingHateCrimeData.pdf](https://github.com/sudogakrc/Projects/blob/main/data_reports/AnalyzingHateCrimeData.pdf)
@@ -24,7 +24,7 @@ Either by following the link on <a href="https://github.com/sudogakrc/sudogakrc"
   Practicing simple linear regression, diving deep into the sklearn libraries
 - ### [regression_and_model_selection.ipynb](https://github.com/sudogakrc/Projects/tree/main/regression_and_model_selection/regression_and_model_selection.ipynb)
   Practicing using more complex regression models and choosing the best fit model by looking at regression metrics
-# [Practices 👩‍💻](https://github.com/sudogakrc/Projects/tree/main/practices)
+# [Practices 📜](https://github.com/sudogakrc/Projects/tree/main/practices)
   Individual or class projects conducted on Python, R, HTML, and SQL
 - ## [Exploratory_Data_Analysis_HousePrices.ipynb](https://github.com/sudogakrc/Projects/tree/main/practices/Exploratory_Data_Analysis_HousePrices.ipynb):
   This notebook demonstrates the basic technologies of doing data analysis for different data types, including: Data overview (understanding column data types, values, and distributions), Data cleaning (remove missing values, outlier detection, Data transformation (normalization, tokenization, lemmatization), Feature engineering (encoding categorical data, text feature representation), Understanding the interactions between columns (colinearty examination)
