@@ -7,6 +7,8 @@ Either by following the link on <a href="https://github.com/sudogakrc/sudogakrc"
 ## [Data Reports 👩‍💻](https://github.com/sudogakrc/Projects/tree/main/data_reports)
 - ### [spotify_genre_classification (ppt, video, and code)](https://github.com/sudogakrc/Projects/tree/main/data_reports/Spotify_genre_classification)
   In this project, I used decision tree and random forest classifiers to classify Spotify song genres.
+- ### [wine_quality_prediction (ppt, video, and code)](https://github.com/sudogakrc/Projects/tree/main/data_reports/wine_quality_predict)
+  In this project, I use linear, lasso, ridge regression models, decision tree and random forest regressors, and SVM regression to predict the quality of white and red wines.
 - ### [AnalyzingHateCrimeData.pdf](https://github.com/sudogakrc/Projects/blob/main/data_reports/AnalyzingHateCrimeData.pdf)
   In this project, we, as a group, investigated the hate crime data across multiple official data sources.
 - ### [FoodSecurityData.pdf](https://github.com/sudogakrc/Projects/blob/main/data_reports/FoodSecurityData.pdf)
