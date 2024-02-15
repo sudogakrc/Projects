@@ -4,6 +4,9 @@
 Either by following the link on <a href="https://github.com/sudogakrc/sudogakrc" target="_blank" rel="noreferrer"> my personal introduction page </a> or through other means, you have reached my public repository in which I store my college course / personal practices on certain data science topics. If you'd like to learn more about what I used each script for, you can continue reading this README which has a short description, and a link, for each script in this repository.
 </p>
 
+## [My Recent NLP Work 👩‍💻](https://github.com/sudogakrc/Projects/tree/main/recent_NLP_work)
+Most of the code here is not complete, as they are form the projects I am currently working on. Examples: Dependency parsing, BERT models, semtiment analysis models, Named Entity Recognition, and analysis scripts.
+
 ## [Data Reports 👩‍💻](https://github.com/sudogakrc/Projects/tree/main/data_reports)
 - ### [spotify_genre_classification (ppt, video, and code)](https://github.com/sudogakrc/Projects/tree/main/data_reports/Spotify_genre_classification)
   In this project, I used decision tree and random forest classifiers to classify Spotify song genres.
